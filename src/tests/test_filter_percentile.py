@@ -1,4 +1,5 @@
 from main import filter_percentile
+import requests
 
 def test_filter_percentile():
 
@@ -10,5 +11,5 @@ def test_filter_percentile():
     ]
 
     response = [{"journey_length": 4, "id": 4}]
-    filtered_data = filter_percentile(data, 0.75)
+    filtered_data = filter_percentile(data, 0.9)
     assert list(filtered_data) == response
