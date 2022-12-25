@@ -4,12 +4,12 @@ import requests
 def test_filter_percentile():
 
     data = [
-        {"Trip_distance": 1}, 
-        {"Trip_distance": 2}, 
-        {"Trip_distance": 3}, 
-        {"Trip_distance": 4}
+        {"trip_distance": 1}, 
+        {"trip_distance": 2}, 
+        {"trip_distance": 3}, 
+        {"trip_distance": 4}
     ]
-    parameter = 'Trip_distance'
-    response = [{"Trip_distance": 4}]
-    filtered_data = filter_percentile(data, 0.9,'Trip_distance')
+    parameter = 'trip_distance'
+    response = [{"trip_distance": 4}]
+    filtered_data = filter_percentile(data, 0.9,'trip_distance')
     assert list(filtered_data) == response
