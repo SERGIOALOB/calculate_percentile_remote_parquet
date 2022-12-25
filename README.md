@@ -1,10 +1,22 @@
 # Parquet File Stored Remotely Percentile Parameter Filter
 This program is used to filter rows of data based on a given percentile value and a parameter contained. The data is read from a Parquet file located at a given URL and the rows are filtered based on the value of the journey_length field. Only rows with a journey_length value greater than or equal to the 90th percentile value are retained.
 
+## How to Install Dependencies
+ To install by pipenv these dependencies, you can use the command:
+### Copy code
+```
+pip install pipenv
+```
+```
+pipenv install
+```
 ## How to Run the Program
  To run the this program, you can use the command:
 
 ### Copy code
+```
+pipenv shell
+```
 ```
 python3 main.py https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-07.parquet 0.9 trip_distance
 ```
