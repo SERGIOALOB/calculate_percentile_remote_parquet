@@ -1,10 +1,6 @@
-
-import pandas as pd
-import mock
 import requests
 import io
-import argparse
-import json
+import argparse3
 import pyarrow as pa
 import pyarrow.parquet as pq
 
