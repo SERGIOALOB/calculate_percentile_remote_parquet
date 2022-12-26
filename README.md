@@ -13,17 +13,23 @@ pipenv install
 ## How to Run the Program
  To run the this program, you can use the command:
 
+ python3 main.py https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-07.parquet 0.9 trip_distance
+
 ### Copy code
 ```
 pipenv shell
 ```
+```
+python3 main.py $url_parquet_file $percentile $parameter
+```
+For example:
 ```
 python3 main.py https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-07.parquet 0.9 trip_distance
 ```
 The main function will retrieve the data from the given URL, filter the rows based on the 90th percentile value of the given parameter.
 
 ## Running the Unit Tests
- To run the unit tests for this program, you can use the pytest command:
+To run the unit tests for this program, you can use the pytest command:
 ### Copy code
 ```
 pytest tests
