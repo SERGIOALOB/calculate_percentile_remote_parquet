@@ -1,6 +1,6 @@
 import requests
 import io
-import argparse3
+import argparse
 import pyarrow as pa
 import pyarrow.parquet as pq
 
